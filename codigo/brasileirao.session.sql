@@ -24,3 +24,9 @@ Select Ano, Clube, Receita_anual, Qtd_Jogadores, Idade_Media, Estrangeiros, Camp
 from dataset_campeonato_br_2007_2024_v2
 where Campeao = 1
 order by Clube; 
+
+
+-- mostrar o resultado já otimizado -- 
+select * 
+from amostra
+order by rand() limit 5;
