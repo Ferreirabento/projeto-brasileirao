@@ -27,6 +27,4 @@ order by Clube;
 
 
 -- mostrar o resultado já otimizado -- 
-select * 
-from amostra
-order by rand() limit 5;
+select * from amostra
