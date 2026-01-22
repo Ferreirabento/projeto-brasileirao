@@ -28,3 +28,15 @@ order by Clube;
 
 -- mostrar o resultado já otimizado -- 
 select * from amostra
+
+
+-- aqui não deu cert mas quero tentar --
+SELECT
+    CASE
+        WHEN Idade_Media BETWEEN 16 AND 21 THEN 'JUVENIO',
+        WHEN Idade_Media BETWEEN 22 AND 29 THEN 'ADULTO',
+        WHEN Idade_Media BETWEEN 30 AND 34 THEN 'VETERANO',
+        ELSE 'FIM DE CARREIRA'
+    END AS 'faixa etária'
+from amostra
+GROUP BY 1;
