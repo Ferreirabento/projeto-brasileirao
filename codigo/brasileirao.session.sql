@@ -7,7 +7,7 @@ order by Clube asc;
 
 -- criação da tabela amostra para separar o que é importante --
 CREATE TABLE amostra (
-	ID INT primary KEY,
+	ID INT primary KEY auto_incremente,
     ano int,
     clube text,
     receita_anual text,
