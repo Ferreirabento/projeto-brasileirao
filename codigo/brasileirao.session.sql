@@ -16,3 +16,11 @@ CREATE TABLE amostra (
     estrangeiros int,
     campeao int
 );
+
+
+-- inserindo os dados (amostragem não probabilistica) dos dados da população -- 
+insert into amostra (ano, clube, receita_anual, qnt_jogadores, media_idade, estrangeiros, campeao)
+Select Ano, Clube, Receita_anual, Qtd_Jogadores, Idade_Media, Estrangeiros, Campeao 
+from dataset_campeonato_br_2007_2024_v2
+where Campeao = 1
+order by Clube; 
