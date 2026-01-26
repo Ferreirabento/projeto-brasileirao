@@ -39,5 +39,10 @@ WHERE campeao = 1
 GROUP BY clube;
 
 -- em qual ano ganaram ? --
+SELECT * 
+FROM amostra
+WHERE clube = 'Palmeiras'
+ORDER BY ano;
+
 -- o que tinham em comun com os outros times que ganharam ? --
 -- o que falto nos outros times que não ganharam --
