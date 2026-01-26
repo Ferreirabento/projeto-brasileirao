@@ -24,12 +24,20 @@ Select Ano, Clube, Receita_anual, Qtd_Jogadores, Idade_Media, Estrangeiros, Camp
 from dataset_campeonato_br_2007_2024_v2
 order by Clube; 
 
--- mostrar o resultado já otimizado -- 
-select * from amostra
 
 -- aqui quero tentar estatistica para estudar --
 -- mas primeiro vamos definir as perguntas --
 -- quais foram os times que mais ganharam ? --
+SELECT 
+FROM amostra
+WHERE campeao = 1
+ORDER BY clube;
+
+SELECT clube, count(*) as mediana
+FROM amostra
+WHERE campeao = 1
+GROUP BY clube;
+
 -- em qual ano ganaram ? --
 -- o que tinham em comun com os outros times que ganharam ? --
 -- o que falto nos outros times que não ganharam --
