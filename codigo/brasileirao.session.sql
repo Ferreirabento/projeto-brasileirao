@@ -22,19 +22,14 @@ CREATE TABLE amostra (
 insert into amostra (ano, clube, receita_anual, qnt_jogadores, media_idade, estrangeiros, campeao)
 Select Ano, Clube, Receita_anual, Qtd_Jogadores, Idade_Media, Estrangeiros, Campeao 
 from dataset_campeonato_br_2007_2024_v2
-where Campeao = 1
 order by Clube; 
-
 
 -- mostrar o resultado já otimizado -- 
 select * from amostra
 
-
 -- aqui quero tentar estatistica para estudar --
 -- mas primeiro vamos definir as perguntas --
 -- quais foram os times que mais ganharam ? --
-SELECT * FROM dataset_campeonato_br_2007_2024_v2
-
 -- em qual ano ganaram ? --
 -- o que tinham em comun com os outros times que ganharam ? --
 -- o que falto nos outros times que não ganharam --
