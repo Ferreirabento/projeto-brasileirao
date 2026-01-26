@@ -42,7 +42,14 @@ WHERE clube = 'Palmeiras' AND Campeao = 1;
 
 
 -- aqui eu já tenho o desvio padrão --
-SELECT Clube, STDDEV(Vitorias), STDDEV(Empates), STDDEV(Derrotas), STDDEV(Gols_feitos), STDDEV(Gols_sofridos), STDDEV(Receita_anual)
+SELECT 
+    Clube, 
+    STDDEV(Vitorias), 
+    STDDEV(Empates), 
+    STDDEV(Derrotas), 
+    STDDEV(Gols_feitos), 
+    STDDEV(Gols_sofridos), 
+    STDDEV(Receita_anual)
 from dataset_campeonato_br_2007_2024_v2
 WHERE Clube = 'Palmeiras' and Campeao = 1;
 
