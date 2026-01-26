@@ -39,9 +39,9 @@ WHERE campeao = 1
 GROUP BY clube;
 
 -- em qual ano ganaram ? --
-SELECT * 
-FROM amostra
-WHERE clube = 'Palmeiras'
+SELECT Clube, AVG(Vitorias), AVG(Empates), AVG (Derrotas), avg(Gols_feitos), AVG(Gols_sofridos), AVG(Receita_anual)
+FROM dataset_campeonato_br_2007_2024_v2
+WHERE clube = 'Palmeiras' AND Campeao = 1
 ORDER BY ano;
 
 -- o que tinham em comun com os outros times que ganharam ? --
