@@ -33,7 +33,7 @@ FROM amostra
 WHERE campeao = 1
 ORDER BY clube;
 
-SELECT clube, count(*) as mediana
+SELECT clube, count(*) as moda
 FROM amostra
 WHERE campeao = 1
 GROUP BY clube;
