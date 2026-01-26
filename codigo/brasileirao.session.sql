@@ -7,7 +7,7 @@ order by Clube asc;
 
 -- criação da tabela amostra para separar o que é importante --
 CREATE TABLE amostra (
-	ID INT primary KEY auto_incremente,
+	ID INT primary KEY,
     ano int,
     clube text,
     receita_anual text,
@@ -33,6 +33,8 @@ select * from amostra
 -- aqui quero tentar estatistica para estudar --
 -- mas primeiro vamos definir as perguntas --
 -- quais foram os times que mais ganharam ? --
+SELECT * FROM dataset_campeonato_br_2007_2024_v2
+
 -- em qual ano ganaram ? --
 -- o que tinham em comun com os outros times que ganharam ? --
 -- o que falto nos outros times que não ganharam --
