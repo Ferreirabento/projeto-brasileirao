@@ -30,13 +30,9 @@ order by Clube;
 select * from amostra
 
 
--- aqui não deu cert mas quero tentar --
-SELECT
-    CASE
-        WHEN Idade_Media BETWEEN 16 AND 21 THEN 'JUVENIO',
-        WHEN Idade_Media BETWEEN 22 AND 29 THEN 'ADULTO',
-        WHEN Idade_Media BETWEEN 30 AND 34 THEN 'VETERANO',
-        ELSE 'FIM DE CARREIRA'
-    END AS 'faixa etária'
-from amostra
-GROUP BY 1;
+-- aqui quero tentar estatistica para estudar --
+-- mas primeiro vamos definir as perguntas --
+-- quais foram os times que mais ganharam ? --
+-- em qual ano ganaram ? --
+-- o que tinham em comun com os outros times que ganharam ? --
+-- o que falto nos outros times que não ganharam --
