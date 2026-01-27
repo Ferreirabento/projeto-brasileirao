@@ -1,3 +1,26 @@
+-- vamos pegar uma amostra e depois jogar no power BI --
+CREATE TABLE amostra_palmeiras(
+	id int primary key auto_increment,
+    ano INT,
+    clube TEXT,
+    Vitorias INT,
+    Empates INT,
+    Derrotas INT,
+    Gols_sofridos INT,
+    Gols_feitos INT,
+    Receita_anual TEXT
+    
+);
+
+INSERT into amostra_palmeiras (ano, clube, Vitorias, Empates, Derrotas, Gols_sofridos, Gols_feitos, Receita_anual)
+SELECT ano, clube, Vitorias, Empates, Derrotas, Gols_sofridos, Gols_feitos, Receita_anual
+FROM dataset_campeonato_br_2007_2024_v2
+WHERE clube = 'Palmeiras'
+ORDER BY ano;
+
+SELECT * from amostra_palmeiras;
+
+
 -- aqui eu tenho as medias para depois fazer o desvio padrão 
 SELECT 
     Clube, 
